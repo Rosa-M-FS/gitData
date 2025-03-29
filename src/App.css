@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.container{
+  max-width: auto;
+  padding: 16px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 4px;
+   
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

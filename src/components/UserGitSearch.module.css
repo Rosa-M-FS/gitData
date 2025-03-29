@@ -1,0 +1,49 @@
+.container{
+    padding: 16px;            
+    max-width: 448px;         
+    margin: 0 auto;          
+    background-color: rgb(188, 204, 224);  
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);  
+    border-radius: 8px;      
+   
+  }
+  
+  .input{
+      border: 1px solid #ada6a6; 
+      padding: 0.5rem;  
+      width: 96%; 
+      border-radius: 0.25rem;  
+      margin-bottom: 0.5rem;  
+    
+  }
+  .button{
+      background-color: #32486b; 
+      color: white; 
+      padding: 0.5rem;  
+      width: 100%;  
+      border-radius: 0.25rem;  
+  }
+  
+  .img{
+      width: 6rem;  
+      height: 6rem; 
+      border-radius: 50%;  
+      margin-left: auto;  
+      margin-right: auto;
+      margin-top: 30px;
+  }
+  
+  h2{
+      font-size: 1.125rem;  
+      font-weight: bold;  
+      margin-top: 0.5rem;  
+  }
+  
+  .error{
+      color: #6e1717;
+  }
+  
+  .user{
+      margin-top: 1rem;  
+      text-align: center;  
+  }
