@@ -31,6 +31,7 @@ const UserGitSearch = ({ username }) => {
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Ingresa usuario de GitHub"
         className={style.input}
+        onKeyDown={(e)=>e.key==='Enter'&& handleSearch()}
       />
       <button
         onClick={handleSearch}
@@ -39,7 +40,10 @@ const UserGitSearch = ({ username }) => {
         Buscar
       </button>
 
-      {status === "loading" && <p>Loading...</p>}
+      {status === "loading" && (
+        <><div className={style.overlay}></div>
+        <div className={style.spinner}></div></>
+        )}
       {error && <p className={style.error}>{error}</p>}
       {user && (
         <div className={style.user}>

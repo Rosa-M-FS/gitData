@@ -1,12 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 
-export const fetchUser = createAsyncThunk("user/fetchUser", async (username) => {
-  const response = await fetch(`https://api.github.com/users/${username}`);
-  if (!response.ok) {
-    throw new Error("User not found");
-  }
-  return response.json();
+export const fetchUser = createAsyncThunk("user/fetchUser", 
+  async (username) => {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    const response = await fetch(`https://api.github.com/users/${username}`);
+    if (!response.ok) {
+      throw new Error("User not found");
+    }
+    return response.json();
 });
 
  
